@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import { Button, Img, List, Text } from "components";
+import { Button, Img, List, Text } from 'components'
 
 const Page = () => {
   return (
@@ -461,7 +461,7 @@ const Page = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Page;
+export default Page

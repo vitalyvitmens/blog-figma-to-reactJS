@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react'
 import {
   flexRender,
   getCoreRowModel,
   useReactTable,
   getSortedRowModel,
-} from "@tanstack/react-table";
+} from '@tanstack/react-table'
 const ReactTable = ({
   columns,
   data = [],
-  rowClass = "",
-  headerClass = "",
+  rowClass = '',
+  headerClass = '',
   enableSorting = false,
   headerProps = {},
   bodyProps = {},
@@ -19,11 +19,11 @@ const ReactTable = ({
     columns,
     data,
     getCoreRowModel: getCoreRowModel(),
-  };
-  if (enableSorting) {
-    tableConfig["getSortedRowModel"] = getSortedRowModel();
   }
-  const table = useReactTable(tableConfig);
+  if (enableSorting) {
+    tableConfig['getSortedRowModel'] = getSortedRowModel()
+  }
+  const table = useReactTable(tableConfig)
 
   // Render the UI for your table
   return (
@@ -56,7 +56,7 @@ const ReactTable = ({
         ))}
       </tbody>
     </table>
-  );
-};
+  )
+}
 
-export { ReactTable };
+export { ReactTable }

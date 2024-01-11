@@ -1,3 +1,5 @@
+# Данный проект демонстрирует как легко можно конвертировать любой макет из Figma в верстку React JS
+
 ## blog_figma_to_reactjs
 
 Generated with ❤️ from [DhiWise](https://www.dhiwise.com)

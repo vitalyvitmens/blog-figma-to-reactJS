@@ -1,9 +1,10 @@
-import React from "react";
-
-import { Img, List, Text } from "components";
-import Header from "components/Header";
+import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { Img, List, Text } from 'components'
+import Header from 'components/Header'
 
 const Page3 = () => {
+  const navigate = useNavigate()
   return (
     <>
       <div className="bg-blue_gray-700 flex flex-col font-arial items-center justify-start mx-auto md:px-10 sm:px-5 px-[267px] w-full">
@@ -48,7 +49,7 @@ const Page3 = () => {
                   Повседневная практика показывает, что начало повседневной
                   работы по формированию позиции позволяет выполнять важные
                   задания по разработке модели развития. Идейные соображения
-                  высшего порядка, а также начало повседневной{" "}
+                  высшего порядка, а также начало повседневной{' '}
                 </Text>
                 <Text
                   className="absolute bottom-[0] left-[0] md:text-2xl sm:text-[22px] text-[26px] text-gray-900 tracking-[-0.78px]"
@@ -73,7 +74,7 @@ const Page3 = () => {
                 соответствует насущным потребностям. Не следует, однако
                 забывать, что начало повседневной работы по формированию
                 позициипозволяет оценить значение соотвествующей условий
-                активизации.{" "}
+                активизации.{' '}
               </Text>
             </div>
           </div>
@@ -291,8 +292,9 @@ const Page3 = () => {
                 <div className="bg-white-A700 border-[3px] border-gray-500 border-solid h-[166px] m-auto rotate-[-180deg] shadow-bs1 w-full"></div>
                 <div className="absolute flex md:flex-col flex-row md:gap-10 h-max inset-[0] items-center justify-between m-auto w-[93%]">
                   <Text
-                    className="sm:text-[21px] md:text-[23px] text-[25px] text-gray-900"
+                    className="sm:text-[21px] md:text-[23px] text-[25px] cursor-pointer text-gray-900"
                     size="txtArialBoldMT25"
+                    onClick={() => navigate('/')}
                   >
                     <>
                       Блог веб-разработчика
@@ -321,7 +323,7 @@ const Page3 = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Page3;
+export default Page3

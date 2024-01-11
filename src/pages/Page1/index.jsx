@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
-import { Img, Text } from "components";
-import Header from "components/Header";
+import { Img, Text } from 'components'
+import Header from 'components/Header'
 
 const Page1 = () => {
   return (
@@ -87,7 +87,7 @@ const Page1 = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Page1;
+export default Page1

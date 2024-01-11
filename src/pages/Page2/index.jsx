@@ -1,37 +1,37 @@
-import React from "react";
+import React from 'react'
 
-import { createColumnHelper } from "@tanstack/react-table";
+import { createColumnHelper } from '@tanstack/react-table'
 
-import { Button, Img, ReactTable, Text } from "components";
-import Header from "components/Header";
+import { Button, Img, ReactTable, Text } from 'components'
+import Header from 'components/Header'
 
 const Page2 = () => {
   const tableData = React.useRef([
     {
-      twentyFour: "vasilly",
-      twentyFive: "13:54",
-      twentySix: "images/img_thumbsup.svg",
+      twentyFour: 'vasilly',
+      twentyFive: '13:54',
+      twentySix: 'images/img_thumbsup.svg',
     },
     {
-      twentyFour: "vasilly",
-      twentyFive: "13:54",
-      twentySix: "images/img_thumbsup.svg",
+      twentyFour: 'vasilly',
+      twentyFive: '13:54',
+      twentySix: 'images/img_thumbsup.svg',
     },
     {
-      twentyFour: "vasilly",
-      twentyFive: "13:54",
-      twentySix: "images/img_thumbsup.svg",
+      twentyFour: 'vasilly',
+      twentyFive: '13:54',
+      twentySix: 'images/img_thumbsup.svg',
     },
     {
-      twentyFour: "vasilly",
-      twentyFive: "13:54",
-      twentySix: "images/img_thumbsup.svg",
+      twentyFour: 'vasilly',
+      twentyFive: '13:54',
+      twentySix: 'images/img_thumbsup.svg',
     },
-  ]);
+  ])
   const tableColumns = React.useMemo(() => {
-    const tableColumnHelper = createColumnHelper();
+    const tableColumnHelper = createColumnHelper()
     return [
-      tableColumnHelper.accessor("twentyFour", {
+      tableColumnHelper.accessor('twentyFour', {
         cell: (info) => (
           <Text
             className="pb-4 sm:pl-5 pl-[22px] pt-6 sm:text-[21px] md:text-[23px] text-[25px] text-gray-900 tracking-[-0.75px]"
@@ -49,7 +49,7 @@ const Page2 = () => {
           </Text>
         ),
       }),
-      tableColumnHelper.accessor("twentyFive", {
+      tableColumnHelper.accessor('twentyFive', {
         cell: (info) => (
           <div className="flex flex-row gap-[17px] items-start justify-start p-0.5">
             <Text
@@ -75,7 +75,7 @@ const Page2 = () => {
           </Text>
         ),
       }),
-      tableColumnHelper.accessor("twentySix", {
+      tableColumnHelper.accessor('twentySix', {
         cell: (info) => (
           <div className="flex flex-row items-center justify-between pl-0.5 py-0.5">
             <Button
@@ -114,8 +114,8 @@ const Page2 = () => {
           </Text>
         ),
       }),
-    ];
-  }, []);
+    ]
+  }, [])
 
   return (
     <>
@@ -132,7 +132,7 @@ const Page2 = () => {
             <ReactTable
               columns={tableColumns}
               data={tableData.current}
-              rowClass={""}
+              rowClass={''}
               headerClass=""
             />
           </div>
@@ -170,7 +170,7 @@ const Page2 = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Page2;
+export default Page2

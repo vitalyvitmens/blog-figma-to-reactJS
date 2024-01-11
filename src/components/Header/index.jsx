@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import { Img, Text } from "components";
+import { Img, Text } from 'components'
 
 const Header = (props) => {
   return (
@@ -70,9 +70,9 @@ const Header = (props) => {
         </div>
       </header>
     </>
-  );
-};
+  )
+}
 
-Header.defaultProps = {};
+Header.defaultProps = {}
 
-export default Header;
+export default Header
